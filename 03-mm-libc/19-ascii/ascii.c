@@ -7,7 +7,7 @@ char capitalize(char c) {
 }
 
 int main(int argc, char **argv) {
-    for(int i=0; i<26; i++)
+    for (int i=0; i<26; i++)
         printf("capital %c: %c\n", alphabet[i], capitalize(alphabet[i]));
 
     return 0;

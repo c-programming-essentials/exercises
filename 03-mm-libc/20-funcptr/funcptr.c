@@ -44,12 +44,12 @@ int main() {
     printf("sort operation to apply? (0: by age, 1: by last name, 2: by total name length)\n");
     scanf("%d", &op);
 
-    if(op < 0 || op > 2)
+    if (op < 0 || op > 2)
         return -1;
 
     // TODO call qsort here applying the proper sort operation to the array contacts. It should be a one liner with no if/switch on op
 
-    for(int i=0; i<CONTACTS_NUM; i++)
+    for (int i=0; i<CONTACTS_NUM; i++)
         print_contact(contacts[i]);
 
 }

@@ -4,7 +4,7 @@ int main(int argc, char **argv) {
     int d = 2;
 
     printf("Today is: ");
-    switch(d) {
+    switch (d) {
         case 0:
             printf("Monday\n");
             break;

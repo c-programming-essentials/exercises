@@ -6,13 +6,13 @@ typedef enum {
 
 void print_flags(flags f) {
 
-    if(f & FLAG1)
+    if (f & FLAG1)
         printf("FLAG1 enabled\n");
-    if(f & FLAG2)
+    if (f & FLAG2)
         printf("FLAG2 enabled\n");
-    if(f & FLAG3)
+    if (f & FLAG3)
         printf("FLAG3 enabled\n");
-    if(f & FLAG4)
+    if (f & FLAG4)
         printf("FLAG4 enabled\n");
 }
 

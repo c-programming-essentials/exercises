@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
     unsigned long long int width;
     unsigned long long int length;
 
-    if(argc == 3) {
+    if (argc == 3) {
         width = atoll(argv[1]);
         length = atoll(argv[2]);
 

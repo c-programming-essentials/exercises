@@ -6,7 +6,7 @@ int add(int a, int b) {
 }
 
 int main(int argc, char **argv) {
-    if(argc == 3) {
+    if (argc == 3) {
         int a = atoi(argv[1]);
         int b = atoi(argv[2]);
 

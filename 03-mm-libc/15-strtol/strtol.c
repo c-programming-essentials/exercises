@@ -6,14 +6,14 @@ int get_string(char *buf, int size) {
 
     printf("please enter an integer number (base 10): ");
     ret = fgets(buf, 128, stdin);
-    if(ret == NULL) {
+    if (ret == NULL) {
         perror("fgets");
         return -1;
     }
 
     // remove the end of line character
-    for(int i=0; i<strlen(buf); i++)
-        if(buf[i] == '\n') {
+    for (int i=0; i<strlen(buf); i++)
+        if (buf[i] == '\n') {
             buf[i] = '\0';
             break;
         }
@@ -30,10 +30,10 @@ int convert_and_print(char *buf) {
 int main(int argc, char **argv) {
     char buf[128];
 
-    if(get_string(buf, 128))
+    if (get_string(buf, 128))
         return -1;
 
-    if(convert_and_print(buf))
+    if (convert_and_print(buf))
         return -1;
 
     return 0;
