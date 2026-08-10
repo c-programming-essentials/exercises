@@ -5,13 +5,13 @@ Write a C program that reads a string from the standard input and capitalises th
 ```console
 $ ./string2
 input a string:
-we swears, to serve the master of the precious
-We Swears, To Serve The Master Of The Precious
+The old lighthouse stood quietly above the crashing waves
+The Old Lighthouse Stood Quietly Above The Crashing Waves
 
 $ ./string2
 input a string:
-and following our will and wind we may just go where no one's been
-And Following Our Will And Wind We May Just Go Where No One's Been
+A small dog chased a red balloon through the crowded market
+A Small Dog Chased A Red Balloon Through The Crowded Market
 ```
 
 > **Capitalising letters.**

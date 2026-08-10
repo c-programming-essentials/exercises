@@ -17,13 +17,13 @@ def compiles():
 def output_correct():
     check50.run("./string2")\
             .stdout("input a string:")\
-            .stdin("and following our will and wind we may just go where no one's been")\
-            .stdout("And Following Our Will And Wind We May Just Go Where No One's Been")\
+            .stdin("The old lighthouse stood quietly above the crashing waves")\
+            .stdout("The Old Lighthouse Stood Quietly Above The Crashing Waves")\
             .exit()
     check50.run("./string2")\
             .stdout("input a string:")\
-            .stdin("It feels like chasing shadows in the night")\
-            .stdout("It Feels Like Chasing Shadows In The Night")\
+            .stdin("A small dog chased a red balloon through the crowded market")\
+            .stdout("A Small Dog Chased A Red Balloon Through The Crowded Markett")\
             .exit()
 
 @check50.check(compiles)
