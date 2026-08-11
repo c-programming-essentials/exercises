@@ -55,7 +55,7 @@ Please enter the amount of random number to generate:
 Generated 10000000 numbers in 0.084871 seconds
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
 
 ```console
 $ check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/06-preprocessor

@@ -32,7 +32,7 @@ $ ./pointer 154 -12
 154 + -12 = 142
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`pointer.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`pointer.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 check50 03-mm-libc/01-pointer

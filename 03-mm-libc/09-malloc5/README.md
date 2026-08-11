@@ -74,7 +74,7 @@ after realloc, array[9] = 90
 > **`realloc`.**
 > Note that the functionality that needs to be implemented in that exercise already exists in the form of the standard function `realloc` (see the relevant manual page
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`malloc5.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`malloc5.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 03-mm-libc/09-malloc5

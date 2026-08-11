@@ -11,7 +11,7 @@ $ ./malloc 546 874 18 13 87 54 4651 54 877 8 46351 87 654 657 654
 8 13 18 54 54 87 87 546 654 654 657 874 877 4651 46351
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`malloc.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`malloc.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 03-mm-libc/05-malloc

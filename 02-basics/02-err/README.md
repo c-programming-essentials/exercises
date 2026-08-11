@@ -20,7 +20,7 @@ This should work!
 > **Hint.**
 > Trying to build the program will have the compiler highlight the errors.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`err.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`err.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 02-basics/02-err

@@ -59,7 +59,7 @@ FLAG3 enabled
 > - bitwise shift, left `<<` and right `>>`
 > - etc. For more information see the \emph{Arithmetic operators: bitwise logic and shifts operators} sections on CPPReference.com.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`enum2.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`enum2.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```c
 $ check50 02-basics/17-enum2

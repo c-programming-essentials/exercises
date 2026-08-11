@@ -36,7 +36,7 @@ $ ./triangle2 15
 
 When the integer parameter `n` is even, the program corrects it to the next odd number by simply incrementing it.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`triangle2.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`triangle2.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```c
 $ check50 02-basics/13-triangle2

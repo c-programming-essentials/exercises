@@ -39,7 +39,7 @@ Modify this program to use `typedef` to alias:
 - `struct s_rectangle` into `rectangle`
 - `unsigned long long int` into `ull`
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`typedef.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`typedef.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ ./check50 02-basics/14-typedef

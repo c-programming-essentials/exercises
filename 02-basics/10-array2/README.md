@@ -23,7 +23,7 @@ $ ./array2 5 5 120
 > Use the modulo operator `%` to obtain the rest of the division of one operand by the other.
 > For example, `42 % 2` evaluates to `0` and `41 % 2` evaluates to `1`.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`array2.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`array2.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 02-basics/10-array2

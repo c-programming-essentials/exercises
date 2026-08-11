@@ -3,7 +3,7 @@
 This repository complements the book **C Programming Essentials**.
 It contains the autocorrecting rules for the book's exercises, as well as an electronic version of each exercise's instructions.
 
-To get started, make sure you have access to a proper [development environment](https://github.com/essential-c/devcontainer), and jump to the [first exercise](01-intro/01-sample/README.md).
+To get started, make sure you have access to a proper [development environment](https://github.com/c-programming-essentials/devcontainer), and jump to the [first exercise](01-intro/01-sample/README.md).
 
 You can also browse exercises on a per-chapter basis:
 

@@ -73,7 +73,7 @@ Write a `Makefile` automating the compilation of this program.
 It should contain intermediate rules compiling 1) C source files into object file and 2) linking object files into the final executable which name should be `prog`.
 Include also a `clean` rule to delete the executable and intermediate object files.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
 
 ```console
 $ check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/04-makefile

@@ -41,7 +41,7 @@ hi there
 
 The string should still be created in the code in a character by character basis, i.e. solutions using `char string[] = "hi there"` will not be accepted.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`string.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`string.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 02-basics/06-string

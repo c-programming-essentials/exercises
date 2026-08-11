@@ -17,7 +17,7 @@ A Small Dog Chased A Red Balloon Through The Crowded Market
 > **Capitalising letters.**
 > Too capitalise letters see the `toupper` function.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/essential-c/devcontainer) and write your solution in a file named **`string2.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`string2.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
 $ check50 03-mm-libc/11-string2
