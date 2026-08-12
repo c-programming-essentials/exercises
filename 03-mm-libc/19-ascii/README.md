@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-**Ascii code in C:** when printed as an integer with the `%d` marker, the ascii code for a given `char` variable can be displayed.
+**Ascii code in C:** when printed as an integer with the `%d` specifier, the ascii code for a given `char` variable can be displayed.
 You can also check out some online ascii tables\footnote{For example \url{http://www.asciitable.com/}}.
 
 The expected output is:
