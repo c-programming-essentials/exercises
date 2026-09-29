@@ -1,8 +1,3 @@
-## Modules: Breaking Down a Program into Several Source Files
-
-Consider the following code:
-
-```c
 #include <stdio.h>
 #include <math.h>
 #include <sys/time.h>
@@ -61,30 +56,3 @@ int main(int argc, char **argv) {
     printf("res3: %llu\n", res3);
     return 0;
 }
-```
-
-The objective of this exercise is to break down this monolithic code into several modules:
-
-\begin{itemize}
-\item `module1.c` and the corresponding header `module1.h`, containing `module1_function1` and `module1_function2`
-\item `module2.c` and `module2.h` containing `module2_function1`
-\item `module3.c` and `module3.h` containing `module3_function1` and `module3_enum`
-\item `main.c` containing the `main` function.
-\end{itemize}
-
-Take care of including in C files only the necessary headers.
-The expected output is:
-
-```console
- ./module
-module3_function1 called with parameter CASE2
-res1: 84
-res2: 1.000000
-res3: 1595255563434
-```
-
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
-
-```console
- check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/03-module
-```
