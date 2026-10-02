@@ -1,0 +1,48 @@
+import check50
+import check50.c
+import re
+
+@check50.check()
+def exists():
+    check50.exists("preprocessor.c")
+    check50.exists("preprocessor.h")
+    with open("preprocessor.c") as f:
+        sources_buf = f.read()
+    return sources_buf
+
+@check50.check(exists)
+def compiles():
+    check50.c.compile("preprocessor.c", cc="gcc", std="gnu99")
+
+@check50.check(exists)
+def validate(sources_buf):
+    if not re.search(r'#include\s+"preprocessor\.h"', sources_buf):
+        raise check50.Failure("preprocessor.h not included in preprocessor.c")
+
+@check50.check(compiles)
+def output_correct():
+    check50.run("./preprocessor")\
+            .stdout("Amount of random number to generate?")\
+            .stdin("10000000")\
+            .stdout(r"Generated 10000000 numbers in [0-9]+\.[0-9]+ seconds")\
+            .exit()
+
+
+def run_and_time(n):
+    out = check50.run("./preprocessor")\
+            .stdout("Amount of random number to generate?")\
+            .stdin(str(n))\
+            .stdout()
+    match = re.search(rf"Generated {n} numbers in ([0-9]+\.[0-9]+) seconds", out)
+    if not match:
+        raise check50.Mismatch(f"Generated {n} numbers in X.XXXXXXXXX seconds", out)
+    return float(match.group(1))
+
+@check50.check(output_correct)
+def time_scales():
+    """generating more numbers takes more time"""
+    small = run_and_time(1000)
+    large = run_and_time(10000000)
+    if large <= small:
+        raise check50.Failure(f"Generating 10000000 numbers ({large}s) was not "
+                              f"slower than generating 1000 numbers ({small}s)")
