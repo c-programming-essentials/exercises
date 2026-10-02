@@ -35,9 +35,9 @@ Note that you won't necessarily get 362 as the array's content is generated rand
 To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`bug.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
-$ check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/08-bug
+$ check50 04-building-debugging/06-bug
 ```
 
 ---
 
-[← Previous exercise](../07-ascii/README.md) | [Next exercise →](#)
+[← Previous exercise](../05-preprocessor/README.md)
