@@ -87,9 +87,9 @@ bin 4: [040 - 050[ ********************
 To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro.c`**. In a terminal, with that file in the local directory, check with this command:
 
 ```console
-$ check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/01-macro
+$ check50 04-building-debugging/01-macro
 ```
 
 ---
 
-[← Previous exercise](../../03-mm-libc/17-stream/README.md) | [Next exercise →](../02-macro-conditional/README.md)
+[← Previous exercise](../../03-mm-libc/20-funcptr/README.md) | [Next exercise →](../02-macro-conditional/README.md)

@@ -84,7 +84,7 @@ res3: 1595255563434
 To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
 
 ```console
-$ check50 -l --ansi-log olivierpierre/comp26020-problems/2025-2026/week4-compilation/03-module
+$ check50 04-building-debugging/03-module
 ```
 
 ---
