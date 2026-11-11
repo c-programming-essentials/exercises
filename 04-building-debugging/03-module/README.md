@@ -63,14 +63,14 @@ int main(int argc, char **argv) {
 }
 ```
 
-The objective of this exercise is to break down this monolithic code into several modules:
+Divide this monolithic code into several modules:
 
-- `module1.c` and the corresponding header `module1.h`, containing `module1_function1` and `module1_function2`
-- `module2.c` and `module2.h` containing `module2_function1`
-- `module3.c` and `module3.h` containing `module3_function1` and `module3_enum`
-- `main.c` containing the `main` function.
+- `module1.c` and its corresponding header, `module1.h`, containing the implementations and declarations, respectively, of `module1_function1` and `module1_function2`.
+- `module2.c` and `module2.h`, implementing and declaring `module2_function1`, respectively.
+- `module3.c` and `module3.h`, implementing and declaring `module3_function1` and `module3_enum`, respectively.
+- `main.c`, implementing the `main` function.
 
-Take care of including in C files only the necessary headers.
+Include only the necessary headers in each implementation file.
 The expected output is:
 
 ```console
@@ -81,7 +81,8 @@ res2: 1.000000
 res3: 1595255563434
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer).
+With all the specified source files in the current directory, run the following command in a terminal:
 
 ```console
 $ check50 04-building-debugging/03-module

@@ -1,6 +1,6 @@
 ## Header Inclusion
 
-Consider the following program which sources are made of two files: `preprocessor.c` and `preprocessor.h`:
+Consider the following program, whose source code consists of two files: `preprocessor.c` and `preprocessor.h`:
 
 ```c
 // preprocessor.h
@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
 ```
 
 This program fails to compile due to missing header inclusions.
-Correct these issues by writing the proper include preprocessor directives.
+Correct these issues by adding the appropriate include directives.
 The expected output is:
 
 ```console
@@ -63,7 +63,8 @@ Amount of random number to generate?
 Generated 10000000 numbers in 0.084871 seconds
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and, in a terminal, with all the mentioned source files in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer).
+With all the specified source files in the current directory, run the following command in a terminal:
 
 ```console
 $ check50 04-building-debugging/05-preprocessor

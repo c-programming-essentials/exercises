@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-It is a variant of the program presented in the previous exercise, where many debug messages are printed on the standard output:
+This is a variant of the program presented in the previous exercise in which many debug messages are printed to standard output:
 
 ```console
 $ ./macro-conditional
@@ -84,8 +84,9 @@ bin 4: [080 - 100[ *******************
 [DEBUG] Memory freed
 ```
 
-Update the program so that the display of the debug output happens only when the macro `DEBUGMODE` is defined.
-Do not define the macro itself in the code, we will rather use the [-D](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html) gcc parameter to do so at compile time:
+Update the program so that debug output is displayed only when the `DEBUGMODE` macro is defined.
+Do not define the macro in the code.
+Instead, use GCC's [-D](https://gcc.gnu.org/onlinedocs/gcc/Preprocessor-Options.html) flag to define it at compile time and enable debug output:
 
 ```console
 $ gcc -DDEBUGMODE macro-conditional.c -o macro-conditional
@@ -97,7 +98,8 @@ $ ./macro-conditional
 # Debug output suppressed
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro-conditional.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro-conditional.c`**.
+With that file in the current directory, run the following command in a terminal:
 
 ```console
 $ check50 04-building-debugging/02-macro-conditional

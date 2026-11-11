@@ -23,16 +23,19 @@ int main(int argc, char **argv) {
 }
 ```
 
-Use GDB to debug this program and fix the bugs. An example of expected execution is as follows:
+Use GDB to debug this program and fix the bugs.
+An example of the expected execution is shown below:
 
 ```console
 Please enter an integer between 0 and 9999: 10
 array[10] = 362
 ```
 
-Note that you won't necessarily get 362 as the array's content is generated randomly, the important part is that the program does not segfault.
+The output will not necessarily display 362 because the array's contents are generated randomly.
+The important requirement is that the program must not encounter a segmentation fault.
 
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`bug.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`bug.c`**.
+With that source file in the current directory, run the following command in a terminal:
 
 ```console
 $ check50 04-building-debugging/06-bug

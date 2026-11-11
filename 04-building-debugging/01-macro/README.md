@@ -55,7 +55,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-This program generates a series of random numbers and outputs the distribution of their value into several bins:
+This program generates a series of random numbers and displays their distribution across several bins:
 
 ```console
 $ ./macro
@@ -66,13 +66,13 @@ bin 3: [060 - 080[ **********************
 bin 4: [080 - 100[ ******************
 ```
 
-There are several redundant hardcoded numbers in the code of `macro.c` that should rather be defined as macros (constants) to ease the code clarity and the possibilities of evolution.
-Fix this problem by introducing at least 2 macros:
+The code in `macro.c` contains several redundant hard-coded numbers that would be better defined as macros (constants) to improve clarity and make the code easier to modify.
+Fix this problem by introducing at least two macros:
 
-- `SAMPLE_SIZE` defining the size (i.e. number of integers) of the array manipulated by the program -- currently 1000 in the provided code sample
-- `MAX_VAL` defining the value that the generated random integers can take as the range `[0 - MAX_VAL[`, currently 100 in the code sample.
+- `SAMPLE_SIZE` defining the size of the array (the number of integers) used by the program, which is 1000 in the code above.
+- `MAX_VAL` defining the upper bound of the range of generated random integers, `[0 - MAX_VAL[`, which is 100 in the code above.
 
-Define these macros to be 10 for `SAMPLE_SIZE` and 50 for `MAX_VAL`.
+Define these macros as 10 for `SAMPLE_SIZE` and 50 for `MAX_VAL`.
 An example of expected output is:
 
 ```console
@@ -84,7 +84,8 @@ bin 3: [030 - 040[ **************************************************
 bin 4: [040 - 050[ ********************
 ```
 
-To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro.c`**. In a terminal, with that file in the local directory, check with this command:
+To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro.c`**.
+With that file in the current directory, run the following command in a terminal:
 
 ```console
 $ check50 04-building-debugging/01-macro
