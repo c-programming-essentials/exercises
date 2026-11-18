@@ -30,10 +30,10 @@ def validate(sources_buf):
 @check50.check(compiles)
 def output_correct():
     check50.run("./macro")\
-            .stdout(r"bin 0: \[000 - 010\[ \**")\
-            .stdout(r"bin 1: \[010 - 020\[ \**")\
-            .stdout(r"bin 2: \[020 - 030\[ \**")\
-            .stdout(r"bin 3: \[030 - 040\[ \**")\
-            .stdout(r"bin 4: \[040 - 050\[ \**")\
+            .stdout(r"bin 0: \[000, 010\[ \**")\
+            .stdout(r"bin 1: \[010, 020\[ \**")\
+            .stdout(r"bin 2: \[020, 030\[ \**")\
+            .stdout(r"bin 3: \[030, 040\[ \**")\
+            .stdout(r"bin 4: \[040, 050\[ \**")\
             .exit()
 

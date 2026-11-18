@@ -59,11 +59,11 @@ This program generates a series of random numbers and displays their distributio
 
 ```console
 $ ./macro
-bin 0: [000 - 020[ *******************
-bin 1: [020 - 040[ *******************
-bin 2: [040 - 060[ *******************
-bin 3: [060 - 080[ **********************
-bin 4: [080 - 100[ ******************
+bin 0: [000, 020[ *******************
+bin 1: [020, 040[ *******************
+bin 2: [040, 060[ *******************
+bin 3: [060, 080[ **********************
+bin 4: [080, 100[ ******************
 ```
 
 The code in `macro.c` contains several redundant hard-coded numbers that would be better defined as macros (constants) to improve clarity and make the code easier to modify.
@@ -77,11 +77,11 @@ An example of expected output is:
 
 ```console
 $ ./macro
-bin 0: [000 - 010[ 
-bin 1: [010 - 020[ **********
-bin 2: [020 - 030[ ********************
-bin 3: [030 - 040[ **************************************************
-bin 4: [040 - 050[ ********************
+bin 0: [000, 010[ 
+bin 1: [010, 020[ **********
+bin 2: [020, 030[ ********************
+bin 3: [030, 040[ **************************************************
+bin 4: [040, 050[ ********************
 ```
 
 To check the correctness of your program, use a [suitable environment](https://github.com/c-programming-essentials/devcontainer) and write your solution in a file named **`macro.c`**.
