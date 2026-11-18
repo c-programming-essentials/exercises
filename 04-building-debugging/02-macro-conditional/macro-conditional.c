@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
 
     printf("[DEBUG] Printing results\n");
     for(int i=0; i<5; i++) {
-        printf("bin %d: [%03d - %03d[ ", i, (100/5)*i, (100/5)*(i+1));
+        printf("bin %d: [%03d, %03d[ ", i, (100/5)*i, (100/5)*(i+1));
         for(int j=0; j<(bins[i]*100)/1000; j++)
             printf("*");
         printf("\n");

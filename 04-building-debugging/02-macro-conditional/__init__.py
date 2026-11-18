@@ -23,19 +23,19 @@ def output_correct():
             .stdout(r"\[DEBUG\] Generated 1000 random numbers")\
             .stdout(r"\[DEBUG\] Dividing numbers into bins")\
             .stdout(r"\[DEBUG\] Printing results")\
-            .stdout(r"bin 0: \[000 - 020\[ \**")\
-            .stdout(r"bin 1: \[020 - 040\[ \**")\
-            .stdout(r"bin 2: \[040 - 060\[ \**")\
-            .stdout(r"bin 3: \[060 - 080\[ \**")\
-            .stdout(r"bin 4: \[080 - 100\[ \**")\
+            .stdout(r"bin 0: \[000, 020\[ \**")\
+            .stdout(r"bin 1: \[020, 040\[ \**")\
+            .stdout(r"bin 2: \[040, 060\[ \**")\
+            .stdout(r"bin 3: \[060, 080\[ \**")\
+            .stdout(r"bin 4: \[080, 100\[ \**")\
             .stdout(r"\[DEBUG\] Printing done")\
             .stdout(r"\[DEBUG\] Memory freed")\
             .exit()
     check50.run("./release")\
-            .stdout(r"bin 0: \[000 - 020\[ \**")\
-            .stdout(r"bin 1: \[020 - 040\[ \**")\
-            .stdout(r"bin 2: \[040 - 060\[ \**")\
-            .stdout(r"bin 3: \[060 - 080\[ \**")\
-            .stdout(r"bin 4: \[080 - 100\[ \**")\
+            .stdout(r"bin 0: \[000, 020\[ \**")\
+            .stdout(r"bin 1: \[020, 040\[ \**")\
+            .stdout(r"bin 2: \[040, 060\[ \**")\
+            .stdout(r"bin 3: \[060, 080\[ \**")\
+            .stdout(r"bin 4: \[080, 100\[ \**")\
             .exit()
 

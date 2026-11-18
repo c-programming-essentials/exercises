@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
 
     printf("[DEBUG] Printing results\n");
     for (int i=0; i<5; i++) {
-        printf("bin %d: [%03d - %03d[ ", i, (100/5)*i, (100/5)*(i+1));
+        printf("bin %d: [%03d, %03d[ ", i, (100/5)*i, (100/5)*(i+1));
         for (int j=0; j<(bins[i]*100)/1000; j++)
             printf("*");
         printf("\n");
@@ -75,11 +75,11 @@ $ ./macro-conditional
 [DEBUG] Generated 1000 random numbers
 [DEBUG] Dividing numbers into bins
 [DEBUG] Printing results
-bin 0: [000 - 020[ ********************
-bin 1: [020 - 040[ *******************
-bin 2: [040 - 060[ ********************
-bin 3: [060 - 080[ ********************
-bin 4: [080 - 100[ *******************
+bin 0: [000, 020[ ********************
+bin 1: [020, 040[ *******************
+bin 2: [040, 060[ ********************
+bin 3: [060, 080[ ********************
+bin 4: [080, 100[ *******************
 [DEBUG] Printing done
 [DEBUG] Memory freed
 ```
